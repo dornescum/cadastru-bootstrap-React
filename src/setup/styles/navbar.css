@@ -1,0 +1,10 @@
+.navbar{
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+.search {
+    max-width: 120px;
+    padding: 12px 24px;
+    margin-right: 5px;
+}

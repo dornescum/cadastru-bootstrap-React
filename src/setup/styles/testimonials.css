@@ -1,0 +1,15 @@
+p {
+    font-size: 20px;
+    line-height: 190%;
+    text-space: var(--spacing);
+}
+.border-bottom {
+    border-bottom: black 1px dotted;
+}
+.rounded {
+    border-radius: 7px;
+}
+.font-size16{
+    font-size: 16px;
+    color: #6f6f6f;
+}
