@@ -15,6 +15,7 @@ import Footer from "./setup/components/Footer";
 import './setup/styles/App.css';
 import {Navbar} from 'react-bootstrap/Navbar'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import DespreNoi from "./setup/components/DespreNoi";
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
           <Route path="/Localizare" component={Localizare}>{Localizare}</Route>
           <Route path="/CautaFirma" component={CautaFirma}>{CautaFirma}</Route>
           <Route path="/ParerileClientilor" component={ParerileClientilor}>{ParerileClientilor}</Route>
+          <Route path="/DespreNoi" component={DespreNoi}>{DespreNoi}</Route>
           <Route path="/InformatiiUtile" component={InformatiiUtile}>{InformatiiUtile}</Route>
           <Route path="/InscriereFirma" component={InscriereFirma}>{InscriereFirma}</Route>
           <Route path="/Contact" component={Contact}>{Contact}</Route>
