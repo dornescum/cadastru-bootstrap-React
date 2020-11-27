@@ -58,6 +58,7 @@ const Dan =()=> {
               Ne place sa credem ca <a href="/" target="_blank" className="text-theme-color">firmecadastru.ro</a>
               este locul unde
               cererea si oferta se intalnesc si speram ca va veti convinge de acest lucru.
+
           </p>
       </div>
 
