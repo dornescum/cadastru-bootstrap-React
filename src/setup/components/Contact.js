@@ -10,12 +10,12 @@ const Test = () => {
         <InfoContact/>
 
         <Container className="p-1 mt-5 mb-5 background-gri">
-            <Form>
+            <Form className="">
                 <Row className="mb-2">
-                    <Col>
+                    <Col xs={12} lg={6} className="mt-1">
                         <Form.Control placeholder="Nume"/>
                     </Col>
-                    <Col>
+                    <Col xs={12} lg={6} className="mt-1">
                         <Form.Control as="select">
                             <option>Selecteaza</option>
                             <option>Potential Client</option>
@@ -27,14 +27,16 @@ const Test = () => {
             </Form>
             <Form>
                 <Row>
-                    <Col>
+                    <Col xs={12} lg={6} className="mt-1">
                         <Form.Control placeholder="Telefon"/>
                     </Col>
-                    <Col>
+                    <Col xs={12} lg={6} className="mt-1">
                         <Form.Control type="email" placeholder="Email"/>
                     </Col>
                 </Row>
             </Form>
+
+
 
             <Form.Group controlId="exampleForm.ControlTextarea1" className="mt-2">
                 {/*<Form.Label>Example textarea</Form.Label>*/}

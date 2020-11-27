@@ -1,12 +1,13 @@
 import React from "react";
-import {Container, Row, Image} from "react-bootstrap";
+import {Container, Row} from "react-bootstrap";
 import Iframe from 'react-iframe'
+import Foto from "../img/santier.png";
 
 const Localizare = () => {
     return <>
         <main-wrapper>
             <Container>
-                <Row className="margin-50px-bottom">
+                <Row className="margin-50px-bottom mt-3 mb-2">
                     <div className="col-lg-7 col-md-6">
                         <p>
                             Aceasta este o mica aplicatie cu ajutorul careia se poate determina pozitia unui punct de
@@ -32,7 +33,8 @@ const Localizare = () => {
                     </div>
 
                     <div className="col-lg-5 col-md-6">
-                        <Image src="../img/santier.png"/>
+                        <img src={Foto} alt="Logo" className="main-img rounded"/>
+
 
                     </div>
                 </Row>
