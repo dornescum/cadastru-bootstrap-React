@@ -1,11 +1,18 @@
 @import "navbar.css";
 @import "testimonials.css";
 @import "despreNoi.css";
+@import "home.css";
+
+/*@import "src/setup/components/Ui/footer.module.css";*/
 /*
 ===============
 Variables
 ===============
-*/
+
+/* ===================================
+    Common styles
+====================================== */
+
 
 
 :root {
@@ -16,9 +23,12 @@ Variables
     --clr-primary-4: hsl(205, 63%, 48%);
     /* primary/main color */
     --clr-primary-5: #49a6e9;
-    --clr-mc: #2196f3;
+    /*--clr-mc: #2196f3;*/
+    --clr-mc: #4d8dcb;
     --clr-bluePrimary: #007bff;
-    --clr-blueHover: #0069d9;
+    /*--clr-blueHover: #0069d9;*/
+    --clr-blueHover: #2196f3;
+
     /* lighter shades of primary color */
     --clr-primary-6: hsl(205, 89%, 70%);
     --clr-primary-7: hsl(205, 90%, 76%);
@@ -58,24 +68,20 @@ Variables
     --clr-gr1-8: #17141C;
     --clr-gr1-9: #808080;
     --clr-gr1-10: #6f6f6f;
+    --clr-gr1-11: #999999;
+    --clr-gr1-12: #dee2e6;
 
     --ff-primary: "Roboto", sans-serif;
     --ff-secondary: "Open Sans", sans-serif;
     --transition: all 0.3s linear;
-    --transition-2: all 0.1s linear;
-    /*modificat pt navbar de la 0.25 la 0.1*/
-    --spacing: 0.1rem;
+    --spacing: 0.25rem;
     --radius: 0.5rem;
+    --radius-4: 4px;
     --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     --max-width: 1170px;
     --fixed-width: 620px;
 }
-ul {
-    list-style-type: none;
-}
-
-
 
 /* loader */
 
@@ -128,7 +134,7 @@ a:hover, a:active {
 }
 
 .bg-theme {
-    background-color: #2196f3;
+    background-color: var(--clr-mc);
 }
 
 .theme-overlay[data-overlay-dark]:before {
@@ -136,7 +142,7 @@ a:hover, a:active {
 }
 
 .text-theme-color {
-    color: #2196f3;
+    color: var(--clr-mc);
 }
 
 .cursor-pointer {
@@ -196,7 +202,7 @@ a:hover, a:active {
 /* button style */
 
 .butn {
-    background: #2196f3;
+    background: var(--clr-mc);
     cursor: pointer;
     font-weight: 600;
     color: #fff;
@@ -420,6 +426,13 @@ input[type=checkbox], input[type=radio] {
     border-color: transparent #2196f3 #2196f3 transparent;
 }
 
+.navbar-header-custom{
+    padding: 0;
+}
+/*fixme rescriu top din nav.css*/
+.navbar-toggler{
+    top: 29px !important;
+}
 @media screen and (min-width: 992px) {
     .header-style .navbar-nav li.active > a, .header-style .navbar ul ul li.active > a, .header-style .navbar-nav li.current > a {
         color: #2196f3;
@@ -447,6 +460,29 @@ input[type=checkbox], input[type=radio] {
     .butn.listi {
         background-color: unset;
         color: #2196f3;
+    }
+
+}
+/*poza centrala index.html*/
+#main-image{
+    height: 300px;
+}
+
+@media screen and (max-width: 1280px){
+    #main-image{
+        height: 700px;
+    }
+}
+
+@media screen and (max-width: 991px){
+    #main-image{
+        height: 600px;
+    }
+
+}
+@media screen and (max-width: 599px){
+    #main-image{
+        height: 400px;
     }
 }
 
@@ -1762,7 +1798,7 @@ ul.countdown li p.timeRefDays, ul.countdown li p.timeRefHours, ul.countdown li p
 
 
 .blockquote p {
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 500;
     line-height: 190%;
     color: #232323;
@@ -2012,6 +2048,110 @@ ul.countdown li p.timeRefDays, ul.countdown li p.timeRefHours, ul.countdown li p
     border-bottom-left-radius: 0;
 }
 
+/* ===================================
+    Footer
+====================================== */
+
+footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    font-size: 15px;
+    padding: 1rem;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+footer h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    line-height: 1;
+    position: relative;
+}
+
+footer h3:after {
+    content: '';
+    display: block;
+    width: 36px;
+    height: 3px;
+    background: #2196f3;
+    margin-top: 12px;
+}
+footer ul {
+    list-style: none;
+}
+footer ul li{
+    font-size: 1rem;
+    padding: 0.2rem 0.5rem;
+}
+footer a{
+    color: var(--clr-black);
+}
+footer a:hover{
+    transition: var(--transition);
+}
+
+.footer-bar {
+    float: left;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #232323;
+    color: #fff;
+}
+
+.footer-bar span {
+    color: #2196f3;
+    font-size: 15px;
+    font-weight: 400;
+}
+.col-list{
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .footer-bar p {
+        font-size: 12px;
+    }
+
+    footer .list-style-1 li {
+        padding: 0 0 5px 0;
+    }
+
+    footer .list-style-1 li:last-child {
+        padding: 0;
+    }
+}
+
+.footer-title-style1 {
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.footer-title-style1:before {
+    position: absolute;
+    content: '';
+    background: #2196f3;
+    width: 40px;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    top: 35px;
+}
+
+.footer-title-style1:after {
+    position: absolute;
+    content: '';
+    background: #2196f3;
+    width: 25px;
+    height: 1px;
+    left: 0;
+    top: 26px;
+}
 
 /*# sourceMappingURL=styles.css.map */
 
@@ -2045,6 +2185,9 @@ ul.countdown li p.timeRefDays, ul.countdown li p.timeRefHours, ul.countdown li p
 .black-color {
     color: var(--clr-black);
 }
+.white-color{
+    background: white;
+}
 
 /*carduri lista firme*/
 .card h3 {
@@ -2058,13 +2201,23 @@ ul.countdown li p.timeRefDays, ul.countdown li p.timeRefHours, ul.countdown li p
     transition: all 0.3s linear;
     padding: 14px 24px;
     cursor: pointer;
-    height: 100px;
+    height: 130px;
     text-align: center;
     align-content: center;
     justify-content: center;
     margin: 10px 0;
 }
-
+/*fixme nu sta flex*/
+@media screen and (max-width: 499px){
+    /*.card-1{*/
+    /*    flex-wrap: wrap;*/
+    /*    margin: 2px 0;*/
+    /*    padding: 3px 5px;*/
+    /*    height: 80px;*/
+    /*    width: 150px;*/
+    /*    flex-flow: row;*/
+    /*}*/
+}
 .card-1:hover {
     transform: scale(1.01);
     box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
@@ -2077,6 +2230,20 @@ ul.countdown li p.timeRefDays, ul.countdown li p.timeRefHours, ul.countdown li p
     vertical-align: middle;
     margin: 0;
 }
+/*carduri mici index*/
+/*.small-cards{*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    padding: 15px;*/
+/*    margin: 3px 5px;*/
+/*}*/
+/*@media screen and (max-width: 499px){*/
+/*    .small-cards{*/
+/*        padding: 15px;*/
+/*        margin: 3px 5px;*/
+/*    }*/
+/*}*/
 
 /*card pareri clienti*/
 .card-clienti {
@@ -2272,12 +2439,12 @@ code {
 .btnM {
     background: #2196f3;
     cursor: pointer;
-    /*font-weight: 600;*/
+    font-weight: 600;
     color: #fff;
     letter-spacing: 1px;
     font-size: 14px;
-    /*line-height: 20px;*/
-    /*padding: 12px 24px;*/
+    line-height: 20px;
+    padding: 12px 24px;
     border-radius: 3px;
     text-transform: uppercase;
     display: inline-block;
@@ -2338,12 +2505,22 @@ code {
 }
 
 /*inscriere firma*/
+fieldset {
+    color: var(--clr-grey-fieldset);
+    font-weight: 700;
+}
+
+fieldset > legend {
+    margin-left: 2rem;
+    font-size: 22px;
+}
 
 /*titlu general pagini */
 .titlu {
     display: inline-block;
     padding: 0.5rem;
     background-color: rgba(0,0,0,0.5);
+    border-radius: 4px;
 }
 /*shadow login*/
 
@@ -2364,4 +2541,9 @@ html {
     width: 320px;
     color: white !important;
     text-align: center;
+}
+
+/*index.html*/
+.card-judete{
+
 }

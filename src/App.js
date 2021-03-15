@@ -8,12 +8,13 @@ import Error from "./setup/components/Error";
 import ParerileClientilor from "./setup/components/ParerileClientilor";
 import CautaFirma from "./setup/components/CautaFirma";
 import About from "./setup/components/DespreNoi";
-import NavbarBootstrap from "./setup/components/NavbarBootstrap";
+import NavbarBootstrap from "./setup/components/Ui/NavbarBootstrap";
 import Localizare from "./setup/components/Localizare";
+import Test from "./setup/components/Test";
 import Contact from "./setup/components/Contact";
-import Footer from "./setup/components/Footer";
+import Footer from "./setup/components/Ui/Footer";
 import './setup/styles/App.css';
-import {Navbar} from 'react-bootstrap/Navbar'
+// import {Navbar} from 'react-bootstrap/Navbar'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import DespreNoi from "./setup/components/DespreNoi";
 
@@ -33,6 +34,7 @@ function App() {
           <Route path="/InformatiiUtile" component={InformatiiUtile}>{InformatiiUtile}</Route>
           <Route path="/InscriereFirma" component={InscriereFirma}>{InscriereFirma}</Route>
           <Route path="/Contact" component={Contact}>{Contact}</Route>
+          <Route path="/Test" component={Test}>{Test}</Route>
           <Route path="*" component={Error}>{Error}</Route>
         </Switch>
         <Footer />

@@ -1,0 +1,12 @@
+.cover-background{
+    background-image: url("../img/harta.jpg");
+    /*position: relative;*/
+}
+.head-home{
+    display: inline-block;
+    padding: 0.5rem;
+    background-color: rgba(0,0,0,0.5);
+    /*position: absolute;*/
+    margin-top: 4.5rem;
+    color: var(--clr-white);
+}
