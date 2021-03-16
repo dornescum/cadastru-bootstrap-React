@@ -1,0 +1,12 @@
+.card{
+    margin: 1rem 0;
+}
+.card a {
+    color: var(--clr-black);
+    transition: var(--transition);
+}
+@media screen and (max-width: 768px){
+    .card{
+        /*width: 20rem;*/
+    }
+}

@@ -1,8 +1,9 @@
 import React from "react";
 import logo from '../../img/rsz_firma-74.png'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Nav, NavDropdown, FormControl, Button, Form, Navbar} from "react-bootstrap";
-// import {FaSearch, FaSignInAlt} from "react-icons/all";
+// import {Nav, NavDropdown, Button, Form, Navbar} from "react-bootstrap";
+import {Nav, NavDropdown, Button, Form, Navbar} from "react-bootstrap";
+import {FaSearch} from "react-icons/all";
 
 const NavbarBootstrap =()=>{
 
@@ -28,9 +29,9 @@ return (
                 <Nav.Link href="Contact">Contact</Nav.Link>
             </Nav>
             <Form inline>
-                {/*<FaSearch className="blue-color" size="22"/>*/}
-                <FormControl type="text" placeholder="Search" className="search" />
-                <Button className="blue-color butn">Log In</Button>
+                <FaSearch className="blue-color" size="22"/>
+                {/*<FormControl type="text" placeholder="Search" className="search" />*/}
+                <Button className="blue-color butn" id="logBtn">Log In</Button>
             </Form>
         </Navbar.Collapse>
     </Navbar>
