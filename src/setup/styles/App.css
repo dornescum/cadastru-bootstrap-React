@@ -3,6 +3,7 @@
 @import "despreNoi.css";
 @import "home.css";
 @import "popular.css";
+@import "InscriereFirma/bottomIncriereFirma.css";
 
 /*@import "src/setup/components/Ui/footer.module.css";*/
 /*
@@ -51,6 +52,9 @@ Variables
     --clr-grey-11: gray94 hsl(0, 0%, 91%);
     --clr-grey-12: gray94 hsl(0, 0%, 98%);
     --grey-1: #828282;
+    --grey-2: #ced4da;
+    --grey-3: #6f6f6f;
+
     --clr-white: #fff;
     --clr-red-dark: hsl(360, 67%, 44%);
     --clr-red-light: hsl(360, 71%, 66%);
@@ -153,7 +157,7 @@ a:hover, a:active {
 }
 
 .text-theme-color {
-    color: var(--clr-mc);
+    color: var(--clr-blueHover);
 }
 
 .cursor-pointer {
@@ -213,10 +217,10 @@ a:hover, a:active {
 /* button style */
 
 .butn {
-    background: var(--clr-mc);
+    background: var(--clr-blueHover);
     cursor: pointer;
     font-weight: 600;
-    color: #fff;
+    color: var(--clr-white);
     letter-spacing: 1px;
     font-size: 14px;
     line-height: 20px;
@@ -234,7 +238,7 @@ a:hover, a:active {
 .butn:hover, .butn:active {
     color: #fff;
     /*background: #232323;*/
-    background: var(--clr-blueHover);
+    background: var(--clr-bluePrimary);
 }
 
 a.butn:hover, a.butn:active {
@@ -1805,6 +1809,13 @@ ul.countdown li p.timeRefDays, ul.countdown li p.timeRefHours, ul.countdown li p
     font-weight: 500;
     margin: 25px 0;
     padding: 20px 30px 30px;
+    box-shadow: var(--light-shadow);
+}
+.blockquote:hover{
+    border-left: 10px solid var(--clr-blueHover);
+    transition: var(--transition);
+    box-shadow: var(--dark-shadow);
+
 }
 
 

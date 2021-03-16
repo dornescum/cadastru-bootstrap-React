@@ -1,5 +1,9 @@
 .card{
     margin: 1rem 0;
+    transition: var(--transition);
+}
+.card:hover{
+    transform: translate3d(0, -6px, 0)
 }
 .card a {
     color: var(--clr-black);

@@ -2,14 +2,16 @@ import React from "react";
 import {Container, Row} from "react-bootstrap";
 import Iframe from 'react-iframe'
 import Foto from "../img/santier.png";
+import TopImage from "./Ui/TopImage";
 
 const Localizare = () => {
     return <>
         <main-wrapper>
+            <TopImage title="Ceva"/>
             <Container>
-                <Row className="margin-50px-bottom mt-3 mb-2">
+                <Row className="margin-50px-bottom mt-5 mb-2">
                     <div className="col-lg-7 col-md-6">
-                        <p>
+                        <p className="grey-color-font font-size16">
                             Aceasta este o mica aplicatie cu ajutorul careia se poate determina pozitia unui punct de
                             coordonate
                             cu precizie metrica. Tot ce trebuie sa faceti este sa introduceti in campurile de mai jos
@@ -19,13 +21,13 @@ const Localizare = () => {
                             butonul '<i className="text-theme-color font-size14 text-uppercase">Localizare</i> '
                             .
                         </p>
-                        <p>
+                        <p className="grey-color-font font-size16">
                             Trebuie mentionat ca aceste coordonate sunt exprimate in metri si au ca sistem de referinta
                             <a rel="noopener noreferrer" href="http://www.topo-online.ro/ro/stereo70.php" target="_blank" className="text-theme-color">
                                 Sistemul de Proiectie Stereografic 1970
                             </a>.
                         </p>
-                        <p>
+                        <p className="grey-color-font font-size16">
                             Exemplu de coordonate: X(Nord) = <i>329976.803</i> ; Y(Est) = <i>589696.632</i>
                         </p>
 
@@ -71,7 +73,7 @@ const Butoane = () => {
 
                     <input type="text" className="form-control" aria-label="Sizing example input"
                            aria-describedby="inputGroup-sizing-sm"
-                           placeholder="X (Nord) 500000.000"/>
+                           placeholder="X (Nord) 500000.000" style={{height: "44px"}}/>
                 </div>
             </div>
             <div className="col-lg-4">
@@ -79,7 +81,7 @@ const Butoane = () => {
 
                     <input type="text" className="form-control" aria-label="Sizing example input"
                            aria-describedby="inputGroup-sizing-sm"
-                           placeholder="Y (Est) 500000.000"/>
+                           placeholder="Y (Est) 500000.000" style={{height: "44px"}}/>
                 </div>
             </div>
             <div className="col-lg-4">
@@ -98,7 +100,7 @@ const Butoane2 = () => {
 
                     <input type="text" className="form-control" aria-label="Sizing example input"
                            aria-describedby="inputGroup-sizing-sm"
-                           placeholder="https://firmecadastru.ro/localizare-teren/@500000.000,500000.000"/>
+                           placeholder="https://firmecadastru.ro/localizare-teren/@500000.000,500000.000" style={{height: "44px"}}/>
                 </div>
             </div>
 

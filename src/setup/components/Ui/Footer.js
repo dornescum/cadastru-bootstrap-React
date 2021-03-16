@@ -16,7 +16,7 @@ const Footer1 = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-4  sm-margin-30px-bottom">
-                        <ul className="col-center">
+                        <ul style={{padding:"0.2rem"}}>
                             <li><a href="index.html">
                                 <FaMapMarkedAlt className="text-theme-color mr-1" size={22}/>
                                 Harta judete
@@ -38,7 +38,7 @@ const Footer1 = () => {
                     </div>
                     {/*//==============================================================================================*/}
                     <div className="col-lg-4 sm-margin-30px-bottom">
-                        <ul className="col-list">
+                        <ul style={{padding:"0.2rem"}}>
                             <li><a href="inscriere-firme.html">
                                 <FaUserPlus className="text-theme-color mr-1"/>
                                 Inscriere firma / PFA</a></li>
@@ -58,7 +58,7 @@ const Footer1 = () => {
                     </div>
                     {/*============================================================================================*/}
                     <div className="col-lg-4 sm-margin-30px-bottom">
-                        <ul className="col-list">
+                        <ul style={{padding:"0 0.2rem"}}>
                             <li>
                                 <Link to="http://www.ancpi.ro/" target="_blank" onClick={(event) => {event.preventDefault(); window.open(this.makeHref("route"));}}>
                                     <FaGlobe  className="text-theme-color mr-1"/>

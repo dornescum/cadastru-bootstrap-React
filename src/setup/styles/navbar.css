@@ -21,3 +21,6 @@ a.nav-link:hover{
 #logBtn{
     margin-left: 1rem;
 }
+.dropdown-item{
+    color: var(--grey-1);
+}

@@ -14,3 +14,11 @@
     border-radius: 50%;
     position: relative;
 }
+.card-list-img{
+    width: 100%;
+    display: block;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+}

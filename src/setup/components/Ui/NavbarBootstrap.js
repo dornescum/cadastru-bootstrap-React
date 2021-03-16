@@ -16,12 +16,13 @@ return (
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="navbar">
             <Nav className="mr-auto">
-                <Nav.Link href="/InscriereFirma">Inscriere Firma</Nav.Link>
+                <Nav.Link href="/inscriereFirma">Inscriere Firma</Nav.Link>
                 <Nav.Link href="Localizare">Localizare</Nav.Link>
                 <NavDropdown title="Informatii Utile" id="basic-nav-dropdown">
                     <NavDropdown.Item href="InformatiiUtile">InformatiiUtile</NavDropdown.Item>
                     <NavDropdown.Item href="ParerileClientilor">Parerile Clientilor</NavDropdown.Item>
                     <NavDropdown.Item href="DespreNoi">Despre Noi</NavDropdown.Item>
+                    <NavDropdown.Item href="CumFunctioneaza">Cum Functioneaza</NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item href="/Test">Test</NavDropdown.Item>
                 </NavDropdown>
@@ -31,7 +32,7 @@ return (
             <Form inline>
                 <FaSearch className="blue-color" size="22"/>
                 {/*<FormControl type="text" placeholder="Search" className="search" />*/}
-                <Button className="blue-color butn" id="logBtn">Log In</Button>
+                <Button className="butn" id="logBtn">Log In</Button>
             </Form>
         </Navbar.Collapse>
     </Navbar>

@@ -1,19 +1,26 @@
 import React from 'react';
+
 import {Button, Container, Row, Form, Col} from "react-bootstrap";
 import {FaBuilding, FaMoneyCheck} from "react-icons/all";
-
+import TopImage from "./Ui/TopImage";
 
 
 const Test = () => {
-    return <>
 
+
+    const handleSubmit =(e)=>{
+        e.preventDefault();
+
+    }
+    return <>
+        <TopImage title="Contact"/>
         <InfoContact/>
 
         <Container className="p-1 mt-5 mb-5 background-gri">
-            <Form className="">
+            <Form className="" onSubmit={handleSubmit}>
                 <Row className="mb-2">
                     <Col xs={12} lg={6} className="mt-1">
-                        <Form.Control placeholder="Nume"/>
+                        <Form.Control placeholder="Nume" />
                     </Col>
                     <Col xs={12} lg={6} className="mt-1">
                         <Form.Control as="select">
@@ -28,10 +35,10 @@ const Test = () => {
             <Form>
                 <Row>
                     <Col xs={12} lg={6} className="mt-1">
-                        <Form.Control placeholder="Telefon"/>
+                        <Form.Control placeholder="Telefon" />
                     </Col>
                     <Col xs={12} lg={6} className="mt-1">
-                        <Form.Control type="email" placeholder="Email"/>
+                        <Form.Control type="email" placeholder="Email" />
                     </Col>
                 </Row>
             </Form>
@@ -40,7 +47,7 @@ const Test = () => {
 
             <Form.Group controlId="exampleForm.ControlTextarea1" className="mt-2">
                 {/*<Form.Label>Example textarea</Form.Label>*/}
-                <Form.Control as="textarea" rows={5}/>
+                <Form.Control as="textarea" rows={5} />
             </Form.Group>
             {/*buton*/}
             <Container>
@@ -65,7 +72,7 @@ export default Test;
 const InfoContact = () => {
     return <section className="no-padding-bottom">
         <div className="container">
-            <div className="row m-4">
+            <div className="row mt-5">
                 <div className="col-lg-6 order-1 order-lg-1">
                     <div className="padding-40px-left sm-no-padding">
                         <h6>
